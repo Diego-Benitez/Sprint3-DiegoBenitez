@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de gastos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<style>
+.color{
+  background-color: rgb(30, 146, 161);
+  max-width:;
+  border-radius: 2%;
+}
+</style>
+<body>
+   <div class="container text-center color">
+     <div class="row">
+      <div class="col-12 border border-radius">
+        <h1 class="text-white "text-monospace">App de gastos</h1>   
+        <p class="text-white "text-monospace">Ingresa cuánto pagó cada personas</p>
+       </div>
+      </div>
+      <div>
+        <div class="mb-1">
+          <label for="nombre" class="form-label text-white">Nombre:</label>
+        <input id="nombre" class="form-control" type="string"><br>
+        </div>
+        <div class="mb-1">
+          <label for="monto" class="form-label text-white">Monto:</label>
+        <input id="monto" class="form-control" type="number"><br>
+      </div>
+      <div class="btn-cent">   
+        <a id="boton" onclick="ir()" class="btn btn-lg btn-primary">Enviar</a>
+      </div>
+      </div>
+      <div class="d-flex border-2hite my-2">
+        <div id="nombreAc" class="ms-2" ></div>
+        <div id="symbol" class="ms-4"></div>
+        <div id="moneda"></div>
+      </div>
+      <div class="border border-white my-4">
+        <h5 class="ms-3 text-white">Total:</h5>
+        <div id="total" class="ms-3"></div>
+      </div>
+      <div class=" border border-white my-4 ">
+         <h5 class="ms-3 text-white">A cada uno le toca aportar:</h5>
+         <div id="aporte" class="ms-3 "></div>
+      </div>
+      <div class="text-white"><h5>Fin</h5></div>
+   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
